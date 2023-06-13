@@ -17,24 +17,21 @@
     <form action="index.php" method="post" class="formik">
         <h1 class="title_register">INICIO DE SESION</h1>
         
-        <div class="user_contenido">
-        <div class="user_text">
-            <p class="text_label">Email</p>
-            <img src="./svg/user.svg" class="icon_svg">
-        </div>
-     
-        <input type="email" name="email">
-    </div>
-        <div class="password_contenido">
-        <div class="password_text">
-            <p class="text_label">Contraseña</p>
-            <img src="./svg/locked.svg" class="icon_svg">
-        </div>
+        
+        <div class="porsiacaso">
+            <input class="porsi" type="email" id="email" required>
+            <span class="porsi_aca">Email</span>
+            </div>
+    
+
+   
+        <div class="porsiacaso">
+            <input class="porsi" type="password" required id="password">
+            <span class="porsi_aca">Contraseña</span>
+            <div id="toggle" onclick="showHide();"></div>
+            </div>
       
-        <input type="password" name="password">
-    </div>
-      
-        <a href="#" class="btn_cta">iniciar sesion</a>
+        <a href="./principal/principal.html" class="btn_cta">iniciar sesion</a>
 
         <div class="registrarse">
             <p class="registrate">¿No tienes una cuenta?
@@ -43,6 +40,6 @@
         </div>
     </form>
     </div>
-    
+    <script src="./script_login.js"></script>
 </body>
 </html>
