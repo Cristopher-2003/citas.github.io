@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony/AgendarCitas</title>
+    <link rel="stylesheet" href="citas.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+
+</head>
+<body>
+    <div class="titulo_encabezado">
+        <h1 class="title">Harmony <div class="span"><div class="p_one">of</div><div class="p_two">the</div>
+        </div> inside </h1>
+    </div>
+
+    <section class="citas_contenido">
+        <h1 class="title_citas">Agendar Cita</h1>
+        <div class="contenedor_citas_elegir">
+            
+            <div class="sexo">
+                <div class="nombre_user">
+                    <h3 class="nombre_user_title">Nombre de Usuario</h3>
+                    <input type="text" name="nombre_user" class="nombre_usuar">
+                </div>
+
+                <div class="genero_desea">
+                    <h3 class="genero_persona_desea">¿Que genero desea para su cita?</h3>
+
+                    <div class="elegir_genero">
+                        <label>
+                            <input type="radio" name="opcion"  class="radio_sex">
+                            Hombre
+                          </label>
+                          
+                          <label>                         
+                            <input type="radio" name="opcion"  class="radio_sex">
+                            Mujer
+                          </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ciudad_content">
+                <h3 class="ciudad_eliga_title">Eliga la ciudad</h3>
+
+                <div class="contenido_eliga_ciudad">
+                <button class="ciudad">Guayaquil</button>
+                <button class="ciudad">Quito</button>
+                <button class="ciudad">Cuenca</button>
+                <button class="ciudad">Ambato</button>
+                <button class="ciudad">Machala</button>
+            </div>
+
+            </div>
+
+            <div class="fechayhora_cita">
+
+            <form onsubmit="return guardarReserva()">
+                <label class="horayfecha" for="fecha-hora">Fecha y Hora:</label>
+                <div class="hora_fecha_content">
+                    <input type="datetime-local" id="fecha-hora" name="fecha-hora">
+                
+                <input type="submit" value="Guardar" class="guardar_btn">
+                </div>
+                
+              </form>
+            
+              <br>
+            
+              <label id="dia-establecido">Día Establecido:</label>
+              <br>
+              <label id="hora-establecida">Hora Establecida:</label>
+            </div>
+
+
+                
+        </div>
+    </section>
+
+
+    <script src="./citas.js"></script>
+    
+
+</body>
+</html>

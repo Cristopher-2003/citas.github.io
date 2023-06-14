@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../svg/fondo_cita.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Nunito', sans-serif;
+}
+.titulo_encabezado{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: 'Fjalla One', sans-serif;
+    color: orange;
+}
+.title{
+    text-transform: uppercase;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.span{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+.citas_contenido{
+    width: 80%;
+    border-radius: 10px;
+    background-color: rgba(217, 217, 217, 0.451);
+    margin: 80px auto; 
+   
+}
+
+.title_citas{
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+.contenedor_citas_elegir{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre_user{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.nombre_user_title{
+    color: #d3d3d3;
+    font-size: 17px;
+}
+.nombre_usuar{
+    background-color: transparent;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+
+
+
+.genero_desea{
+    background-color: rgb(205, 93, 1);
+    color: #000000;
+    padding: 10px;
+}
+.genero_persona_desea{
+    font-size: 16px;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+.elegir_genero{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.radio_sex{
+    -moz-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #949494;
+    background-color: #949494;
+    margin-right: 5px;
+  }
+ .radio_sex:checked{
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+  }
+
+
+
+  .ciudad_content{
+    padding: 25px 0 5px 0;
+  }
+  .ciudad_eliga_title{
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  .contenido_eliga_ciudad{
+    display: grid;
+    grid-template-areas: 
+    "ele1 ele2"
+    "ele3 ele4"
+    "ele5 ele5";
+    gap: 3px 5px;
+  }
+
+.ciudad:nth-child(1){
+    grid-area: ele1;
+}
+.ciudad:nth-child(2){
+    grid-area: ele2;
+}.ciudad:nth-child(3){
+    grid-area: ele3;
+}.ciudad:nth-child(4){
+    grid-area: ele4;
+}.ciudad:nth-child(5){
+    grid-area: ele5;
+}
+button{
+    background-color: rgb(16, 65, 65);
+    border-radius: 4px;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+}
+button:focus{
+    background-color: rgb(46, 24, 3);
+}
+button:hover{
+    transition: .5s;
+    color:rgb(0, 0, 0);
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);;
+}
+.fechayhora_cita{
+    padding: 20px 0;
+
+}
+.horayfecha{
+    font-size: 20px;
+    font-weight: 600;
+}
+.hora_fecha_content{
+    display: flex;
+    gap: 5px;
+}
+.guardar_btn{
+    background-color: rgb(0, 0, 0);
+    padding: 7px;
+    border: none;
+    color: #ffffff;
+    border-radius: 4px;
+}
+#dia-establecido{
+    font-weight: bold;
+}
+#hora-establecida{
+    font-weight: bold;
+}
